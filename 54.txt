@@ -1,0 +1,47 @@
+site
+
+can i use
+
+
+
+
+usar o flex box
+
+
+reset 
+* {
+margin: 0;
+padding: 0;
+}
+
+
+display inline block
+
+nunca escrever letra maiuscula no html
+
+
+flexboxfroggy.com
+
+viewport h
+vieewport w
+
+
+
+
+
+media queries (if)
+
+@media (min-width: 768px) {
+
+}
+
+
+@media (min-width: 1024px) {
+
+}
+
+
+learnlayout.com
+site sobre layout css
+
+s
