@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html>
     <head>
 
         <meta charset="utf-8">
@@ -15,331 +14,332 @@
 
     <body>
         <section id="book">
-          <canvas id="pageflip-canvas"></canvas>
-          <section id="pages">
+        <canvas id="pageflip-canvas"></canvas>
+            <section id="pages">
 
-            <section class="initial">
-                <div>
-                        <h1>Tiago Selpuveda</h1>
-                        <h2>Quem é esse cara!?</h2>
-                </div>
-                
-            </section>
-
-            <section class="wia">
-                <div>
-                    <ul>
-                        <li>
-                            <div></div>
-                            <h3>Esse sou eu!</h3>
-                        </li>
-                    </ul>   
-                    <p>
-                        Formado em Gestão Ambiental, pela UNISO em 2010. Sempre gostei de tecnologia, mudei de área. Hoje, estudante de Análise e Desenvolvimento de Sistemas.
-                    </p>
-                    <p>
-                        Preciso agradecer ao PodCast "DevNaEstrada" por me fazer me interessar pelo mundo dev, e ao grupo de estudos @InTEGRAdos por todo o resto <span> (“Always pass on what you have learned.”)</span>.
-                    </p>
-                    <p>
-                        Apesar de acreditar que não dá pra abraçar o mundo, tento, na medida do possivel, estar sempre me aprimorando para ser full stack. É legal ver a forma das coisas que você faz e com isso cativar as pessoas, mas administrar essas coisas por uma outra perspectiva, é muito mais interessante.
-                    </p>
-                </div>
-
-            </section>
-
-            <section class="skills">
-                <div>
-                    <h2>
-                        Habilidades
-                    </h2>
-
-                    <span>“In a dark place we find ourselves, and a little more knowledge lights our way.”</span>
-
-                    <p>     Não domino com maestria, mas estou sempre buscando conhecimento, estudando, e treinando, principalmente nestes quesitos</p>
-
-                    <ul>
-                        <li>
-                            <div></div>
-                            <h3>JavaScript</h3>
-                        </li>
-
-                        <li>
-                            <div></div>
-                            <h3>Node JS</h3>
-                        </li>
-
-                        <li>
-                            <div></div>
-                            <h3>Mongo DB (noSQL)</h3>
-                        </li>
-
-                        <li>
-                            <div></div>
-                            <h3>Java</h3>
-                        </li>
-
-                        <li>
-                            <div></div>
-                            <h3>.Net</h3>
-                        </li>
-
-                        <li>
-                            <div></div>
-                            <h3>SQL</h3>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            
-            <section class="jobs">
-                <div>
-                    <h2>
-                        Trabalhos
-                    </h2>
-                    <span>“Do. Or do not. There is no try.”</span>
-                    <p>
-                        Tive a oportunidade de me cercar com pessoas fabulosas, me ensinaram muito, me ajudaram muito, e juntos organizamos a 23a. "Semana da Tecnologia" na Fatec Sorocaba.
-                    </p>
-                    <a href="https://fatecsorocaba.github.io/semana-da-tecnologia/">XXIII Semana da Tecnologia</a>
-                    <p>
-                        Fiz o webservice de um aplicativo para compras em supermercado, com Node e MongoDB
-                    </p>
-                    <p>
-                        Praticar e se divertir, é o codepen!
-                    </p>
-                    <a href="http://codepen.io/tiagofoks/">Codepen</a>
-                    <p>
-                        Aguardem novos projetos em breve.
-                    </p>
-                </div>
-            </section>
-
-            <section class="community">
-                <div>
-                    <h2>
-                        Comunidades
-                    </h2>
-                    <span>
-                        “Many of the truths that we cling to depend on our point of view.”
-                    </span>
-                    <p>
-                        Sempre achei que participar de comunidades era importante. Mas por que?!
-                    </p>
-                    <p>
-                        Fato, sempre haverá alguém que sabe mais que você! E ouvir o que essas pessoas tem a dizer, é legal, importante e necessário!
-                    </p>
-                    <p>
-                        E também tem o fato de conhecer pessoas do mundo real. Essas pessoas podem se tornar seus amigo, seus chefes, seus funcionários... a palavra chave é NETWORK
-                    </p>
-                    <ul>
-                        <li><a href="https://groups.google.com/forum/m/#!forum/python-sorocaba">Python Sorocaba</a></li>
-                        <li><a href="https://www.facebook.com/GURUSorocaba">Guru Sorocaba</a></li>
-                        <li><a href="https://www.facebook.com/hacklabsorocaba">HackLab Sorocaba</a></li>
-                        <li><a href="https://www.facebook.com/sorocabajs">Sorocaba JS</a></li>
-                        <li><a href="https://www.facebook.com/GDGSorocaba">GDG Sorocaba - FB</a></li>
-                        <li><a href="http://www.meetup.com/GDG-Sorocaba">GDG Sorocaba - MeetUp</a></li>
-                        <li><a href="http://www.meetup.com/In-Tegra-Do">In.TEGRA.do</a></li>
-                        <li><a href="http://www.meetup.com/Sorocaba-English-Conversation-Happy-Hours">English MeetUp</a></li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="contact">
-                <div>
-                    <h2>
-                        Fala comigo, eu respondo!
-                    </h2>
-                    <ul>
-                        <li><a href="tel:+5515996215552">(15)99621-5552</a></li>
-                        <li><a href="mailto:tiagofoks@gmail.com">tiagofoks@gmail.com</a></li>
-                    </ul>
-                </div>
-            </section>
-        </section>    
-
-        <script type="text/javascript">
-                
-            (function() {
-                
-                var BOOK_WIDTH = 830;
-                var BOOK_HEIGHT = 560;
-                
-                var PAGE_WIDTH = 400;
-                var PAGE_HEIGHT = 550;
-                
-                var PAGE_Y = ( BOOK_HEIGHT - PAGE_HEIGHT ) / 2;
-                
-                var CANVAS_PADDING = 60;
-                
-                var page = 0;
-                
-                var canvas = document.getElementById( "pageflip-canvas" );
-                var context = canvas.getContext( "2d" );
-                
-                var mouse = { x: 0, y: 0 };
-                
-                var flips = [];
-                
-                var book = document.getElementById( "book" );
-                
-                var pages = book.getElementsByTagName( "section" );
-                
-                for (var i = 0, len = pages.length; i < len; i++) {
-                    pages[i].style.zIndex = len - i;
+                <section class="initial">
+                    <div>
+                            <h1>Tiago Selpuveda</h1>
+                            <h2>Quem é esse cara!?</h2>
+                    </div>
                     
-                    flips.push({
-                        progress: 1,
-                        target: 1,
-                        page: pages[i], 
-                        dragging: false
-                    });
-                }
+                </section>
+
+                <section class="wia">
+                    <div>
+                        <ul>
+                            <li>
+                                <div></div>
+                                <h3>Esse sou eu!</h3>
+                            </li>
+                        </ul>   
+                        <p>
+                            Formado em Gestão Ambiental, pela UNISO em 2010. Sempre gostei de tecnologia, mudei de área. Hoje, estudante de Análise e Desenvolvimento de Sistemas.
+                        </p>
+                        <p>
+                            Preciso agradecer ao PodCast "DevNaEstrada" por me fazer me interessar pelo mundo dev, e ao grupo de estudos @InTEGRAdos por todo o resto <strong> (“Always pass on what you have learned.”)</strong>.
+                        </p>
+                        <p>
+                            Apesar de acreditar que não dá pra abraçar o mundo, tento, na medida do possivel, estar sempre me aprimorando para ser full stack. É legal ver a forma das coisas que você faz e com isso cativar as pessoas, mas administrar essas coisas por uma outra perspectiva, é muito mais interessante.
+                        </p>
+                    </div>
+
+                </section>
+
+                <section class="skills">
+                    <div>
+                        <h2>
+                            Habilidades
+                        </h2>
+
+                        <span>“In a dark place we find ourselves, and a little more knowledge lights our way.”</span>
+
+                        <p>     Não domino com maestria, mas estou sempre buscando conhecimento, estudando, e treinando, principalmente nestes quesitos</p>
+
+                        <ul>
+                            <li>
+                                <div></div>
+                                <h3>JavaScript</h3>
+                            </li>
+
+                            <li>
+                                <div></div>
+                                <h3>Node JS</h3>
+                            </li>
+
+                            <li>
+                                <div></div>
+                                <h3>Mongo DB (noSQL)</h3>
+                            </li>
+
+                            <li>
+                                <div></div>
+                                <h3>Java</h3>
+                            </li>
+
+                            <li>
+                                <div></div>
+                                <h3>.Net</h3>
+                            </li>
+
+                            <li>
+                                <div></div>
+                                <h3>SQL</h3>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
                 
-                canvas.width = BOOK_WIDTH + ( CANVAS_PADDING * 2 );
-                canvas.height = BOOK_HEIGHT + ( CANVAS_PADDING * 2 );
-                
-                canvas.style.top = -CANVAS_PADDING + "px";
-                canvas.style.left = -CANVAS_PADDING + "px";
-                
-                setInterval( render, 1000 / 60 );
-                
-                document.addEventListener( "mousemove", mouseMoveHandler, false );
-                document.addEventListener( "mousedown", mouseDownHandler, false );
-                document.addEventListener( "mouseup", mouseUpHandler, false );
-                
-                function mouseMoveHandler( event ) {
-                    mouse.x = event.clientX - book.offsetLeft - ( BOOK_WIDTH / 2 );
-                    mouse.y = event.clientY - book.offsetTop;
-                }
-                
-                function mouseDownHandler( event ) {
-                    if (Math.abs(mouse.x) < PAGE_WIDTH) {
-                        if (mouse.x < 0 && page - 1 >= 0) {
-                            flips[page - 1].dragging = true;
-                        }
-                        else if (mouse.x > 0 && page + 1 < flips.length) {
-                            flips[page].dragging = true;
-                        }
+                <section class="jobs">
+                    <div>
+                        <h2>
+                            Trabalhos
+                        </h2>
+                        <span>“Do. Or do not. There is no try.”</span>
+                        <p>
+                            Tive a oportunidade de me cercar com pessoas fabulosas, me ensinaram muito, me ajudaram muito, e juntos organizamos a 23a. "Semana da Tecnologia" na Fatec Sorocaba.
+                        </p>
+                        <a href="https://fatecsorocaba.github.io/semana-da-tecnologia/">XXIII Semana da Tecnologia</a>
+                        <p>
+                            Fiz o webservice de um aplicativo para compras em supermercado, com Node e MongoDB
+                        </p>
+                        <p>
+                            Praticar e se divertir, é o codepen!
+                        </p>
+                        <a href="http://codepen.io/tiagofoks/">Codepen</a>
+                        <p>
+                            Aguardem novos projetos em breve.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="community">
+                    <div>
+                        <h2>
+                            Comunidades
+                        </h2>
+                        <span>
+                            “Many of the truths that we cling to depend on our point of view.”
+                        </span>
+                        <p>
+                            Sempre achei que participar de comunidades era importante. Mas por que?!
+                        </p>
+                        <p>
+                            Fato, sempre haverá alguém que sabe mais que você! E ouvir o que essas pessoas tem a dizer, é legal, importante e necessário!
+                        </p>
+                        <p>
+                            E também tem o fato de conhecer pessoas do mundo real. Essas pessoas podem se tornar seus amigo, seus chefes, seus funcionários... a palavra chave é NETWORK
+                        </p>
+                        <ul>
+                            <li><a href="https://groups.google.com/forum/m/#!forum/python-sorocaba">Python Sorocaba</a></li>
+                            <li><a href="https://www.facebook.com/GURUSorocaba">Guru Sorocaba</a></li>
+                            <li><a href="https://www.facebook.com/hacklabsorocaba">HackLab Sorocaba</a></li>
+                            <li><a href="https://www.facebook.com/sorocabajs">Sorocaba JS</a></li>
+                            <li><a href="https://www.facebook.com/GDGSorocaba">GDG Sorocaba - FB</a></li>
+                            <li><a href="http://www.meetup.com/GDG-Sorocaba">GDG Sorocaba - MeetUp</a></li>
+                            <li><a href="http://www.meetup.com/In-Tegra-Do">In.TEGRA.do</a></li>
+                            <li><a href="http://www.meetup.com/Sorocaba-English-Conversation-Happy-Hours">English MeetUp</a></li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="contact">
+                    <div>
+                        <h2>
+                            Fala comigo, eu respondo!
+                        </h2>
+                        <ul>
+                            <li><a href="tel:+5515996215552">(15)99621-5552</a></li>
+                            <li><a href="mailto:tiagofoks@gmail.com">tiagofoks@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </section>
+            </section>    
+
+            <script type="text/javascript">
+                    
+                (function() {
+                    
+                    var BOOK_WIDTH = 830;
+                    var BOOK_HEIGHT = 560;
+                    
+                    var PAGE_WIDTH = 400;
+                    var PAGE_HEIGHT = 550;
+                    
+                    var PAGE_Y = ( BOOK_HEIGHT - PAGE_HEIGHT ) / 2;
+                    
+                    var CANVAS_PADDING = 60;
+                    
+                    var page = 0;
+                    
+                    var canvas = document.getElementById( "pageflip-canvas" );
+                    var context = canvas.getContext( "2d" );
+                    
+                    var mouse = { x: 0, y: 0 };
+                    
+                    var flips = [];
+                    
+                    var book = document.getElementById( "book" );
+                    
+                    var pages = book.getElementsByTagName( "section" );
+                    
+                    for (var i = 0, len = pages.length; i < len; i++) {
+                        pages[i].style.zIndex = len - i;
+                        
+                        flips.push({
+                            progress: 1,
+                            target: 1,
+                            page: pages[i], 
+                            dragging: false
+                        });
                     }
                     
-                    event.preventDefault();
-                }
-                
-                function mouseUpHandler( event ) {
-                    for( var i = 0; i < flips.length; i++ ) {
-
-                        if( flips[i].dragging ) {
-
-                            if( mouse.x < 0 ) {
-                                flips[i].target = -1;
-                                page = Math.min( page + 1, flips.length );
+                    canvas.width = BOOK_WIDTH + ( CANVAS_PADDING * 2 );
+                    canvas.height = BOOK_HEIGHT + ( CANVAS_PADDING * 2 );
+                    
+                    canvas.style.top = -CANVAS_PADDING + "px";
+                    canvas.style.left = -CANVAS_PADDING + "px";
+                    
+                    setInterval( render, 1000 / 60 );
+                    
+                    document.addEventListener( "mousemove", mouseMoveHandler, false );
+                    document.addEventListener( "mousedown", mouseDownHandler, false );
+                    document.addEventListener( "mouseup", mouseUpHandler, false );
+                    
+                    function mouseMoveHandler( event ) {
+                        mouse.x = event.clientX - book.offsetLeft - ( BOOK_WIDTH / 2 );
+                        mouse.y = event.clientY - book.offsetTop;
+                    }
+                    
+                    function mouseDownHandler( event ) {
+                        if (Math.abs(mouse.x) < PAGE_WIDTH) {
+                            if (mouse.x < 0 && page - 1 >= 0) {
+                                flips[page - 1].dragging = true;
                             }
-                            else {
-                                flips[i].target = 1;
-                                page = Math.max( page - 1, 0 );
+                            else if (mouse.x > 0 && page + 1 < flips.length) {
+                                flips[page].dragging = true;
                             }
                         }
                         
-                        flips[i].dragging = false;
-                    }
-                }
-                
-                function render() {
-                    
-                    context.clearRect( 0, 0, canvas.width, canvas.height );
-                    
-                    for( var i = 0, len = flips.length; i < len; i++ ) {
-                        var flip = flips[i];
-                        
-                        if( flip.dragging ) {
-                            flip.target = Math.max( Math.min( mouse.x / PAGE_WIDTH, 1 ), -1 );
-                        }
-                        
-                        flip.progress += ( flip.target - flip.progress ) * 0.2;
-                        
-                        if( flip.dragging || Math.abs( flip.progress ) < 0.997 ) {
-                            drawFlip( flip );
-                        }
-                        
+                        event.preventDefault();
                     }
                     
-                }
-                
-                function drawFlip( flip ) {
+                    function mouseUpHandler( event ) {
+                        for( var i = 0; i < flips.length; i++ ) {
 
-                    var strength = 1 - Math.abs( flip.progress );
+                            if( flips[i].dragging ) {
+
+                                if( mouse.x < 0 ) {
+                                    flips[i].target = -1;
+                                    page = Math.min( page + 1, flips.length );
+                                }
+                                else {
+                                    flips[i].target = 1;
+                                    page = Math.max( page - 1, 0 );
+                                }
+                            }
+                            
+                            flips[i].dragging = false;
+                        }
+                    }
                     
-                    var foldWidth = ( PAGE_WIDTH * 0.5 ) * ( 1 - flip.progress );
+                    function render() {
+                        
+                        context.clearRect( 0, 0, canvas.width, canvas.height );
+                        
+                        for( var i = 0, len = flips.length; i < len; i++ ) {
+                            var flip = flips[i];
+                            
+                            if( flip.dragging ) {
+                                flip.target = Math.max( Math.min( mouse.x / PAGE_WIDTH, 1 ), -1 );
+                            }
+                            
+                            flip.progress += ( flip.target - flip.progress ) * 0.2;
+                            
+                            if( flip.dragging || Math.abs( flip.progress ) < 0.997 ) {
+                                drawFlip( flip );
+                            }
+                            
+                        }
+                        
+                    }
                     
-                    var foldX = PAGE_WIDTH * flip.progress + foldWidth;
+                    function drawFlip( flip ) {
+
+                        var strength = 1 - Math.abs( flip.progress );
+                        
+                        var foldWidth = ( PAGE_WIDTH * 0.5 ) * ( 1 - flip.progress );
+                        
+                        var foldX = PAGE_WIDTH * flip.progress + foldWidth;
+                        
+                        var verticalOutdent = 20 * strength;
+                        
+                        var paperShadowWidth = ( PAGE_WIDTH * 0.5 ) * Math.max( Math.min( 1 - flip.progress, 0.5 ), 0 );
+                        var rightShadowWidth = ( PAGE_WIDTH * 0.5 ) * Math.max( Math.min( strength, 0.5 ), 0 );
+                        var leftShadowWidth = ( PAGE_WIDTH * 0.5 ) * Math.max( Math.min( strength, 0.5 ), 0 );
+                                   
+                        flip.page.style.width = Math.max(foldX, 0) + "px";
+                        
+                        context.save();
+                        context.translate( CANVAS_PADDING + ( BOOK_WIDTH / 2 ), PAGE_Y + CANVAS_PADDING );
+                        
+                        context.strokeStyle = 'rgba(0,0,0,'+(0.05 * strength)+')';
+                        context.lineWidth = 30 * strength;
+                        context.beginPath();
+                        context.moveTo(foldX - foldWidth, -verticalOutdent * 0.5);
+                        context.lineTo(foldX - foldWidth, PAGE_HEIGHT + (verticalOutdent * 0.5));
+                        context.stroke();
+                                   
+                        var rightShadowGradient = context.createLinearGradient(foldX, 0, foldX + rightShadowWidth, 0);
+                        rightShadowGradient.addColorStop(0, 'rgba(0,0,0,'+(strength*0.2)+')');
+                        rightShadowGradient.addColorStop(0.8, 'rgba(0,0,0,0.0)');
+                        
+                        context.fillStyle = rightShadowGradient;
+                        context.beginPath();
+                        context.moveTo(foldX, 0);
+                        context.lineTo(foldX + rightShadowWidth, 0);
+                        context.lineTo(foldX + rightShadowWidth, PAGE_HEIGHT);
+                        context.lineTo(foldX, PAGE_HEIGHT);
+                        context.fill();
+                                    
+                        var leftShadowGradient = context.createLinearGradient(foldX - foldWidth - leftShadowWidth, 0, foldX - foldWidth, 0);
+                        leftShadowGradient.addColorStop(0, 'rgba(0,0,0,0.0)');
+                        leftShadowGradient.addColorStop(1, 'rgba(0,0,0,'+(strength*0.15)+')');
+                        
+                        context.fillStyle = leftShadowGradient;
+                        context.beginPath();
+                        context.moveTo(foldX - foldWidth - leftShadowWidth, 0);
+                        context.lineTo(foldX - foldWidth, 0);
+                        context.lineTo(foldX - foldWidth, PAGE_HEIGHT);
+                        context.lineTo(foldX - foldWidth - leftShadowWidth, PAGE_HEIGHT);
+                        context.fill();
+                        
+                        var foldGradient = context.createLinearGradient(foldX - paperShadowWidth, 0, foldX, 0);
+                        foldGradient.addColorStop(0.35, '#fafafa');
+                        foldGradient.addColorStop(0.73, '#eeeeee');
+                        foldGradient.addColorStop(0.9, '#fafafa');
+                        foldGradient.addColorStop(1.0, '#e2e2e2');
+                        
+                        context.fillStyle = foldGradient;
+                        context.strokeStyle = 'rgba(0,0,0,0.06)';
+                        context.lineWidth = 0.5;
+                        
+                        context.beginPath();
+                        context.moveTo(foldX, 0);
+                        context.lineTo(foldX, PAGE_HEIGHT);
+                        context.quadraticCurveTo(foldX, PAGE_HEIGHT + (verticalOutdent * 2), foldX - foldWidth, PAGE_HEIGHT + verticalOutdent);
+                        context.lineTo(foldX - foldWidth, -verticalOutdent);
+                        context.quadraticCurveTo(foldX, -verticalOutdent * 2, foldX, 0);
+                        
+                        context.fill();
+                        context.stroke();
+                        
+                        
+                        context.restore();
+                    }
                     
-                    var verticalOutdent = 20 * strength;
-                    
-                    var paperShadowWidth = ( PAGE_WIDTH * 0.5 ) * Math.max( Math.min( 1 - flip.progress, 0.5 ), 0 );
-                    var rightShadowWidth = ( PAGE_WIDTH * 0.5 ) * Math.max( Math.min( strength, 0.5 ), 0 );
-                    var leftShadowWidth = ( PAGE_WIDTH * 0.5 ) * Math.max( Math.min( strength, 0.5 ), 0 );
-                               
-                    flip.page.style.width = Math.max(foldX, 0) + "px";
-                    
-                    context.save();
-                    context.translate( CANVAS_PADDING + ( BOOK_WIDTH / 2 ), PAGE_Y + CANVAS_PADDING );
-                    
-                    context.strokeStyle = 'rgba(0,0,0,'+(0.05 * strength)+')';
-                    context.lineWidth = 30 * strength;
-                    context.beginPath();
-                    context.moveTo(foldX - foldWidth, -verticalOutdent * 0.5);
-                    context.lineTo(foldX - foldWidth, PAGE_HEIGHT + (verticalOutdent * 0.5));
-                    context.stroke();
-                               
-                    var rightShadowGradient = context.createLinearGradient(foldX, 0, foldX + rightShadowWidth, 0);
-                    rightShadowGradient.addColorStop(0, 'rgba(0,0,0,'+(strength*0.2)+')');
-                    rightShadowGradient.addColorStop(0.8, 'rgba(0,0,0,0.0)');
-                    
-                    context.fillStyle = rightShadowGradient;
-                    context.beginPath();
-                    context.moveTo(foldX, 0);
-                    context.lineTo(foldX + rightShadowWidth, 0);
-                    context.lineTo(foldX + rightShadowWidth, PAGE_HEIGHT);
-                    context.lineTo(foldX, PAGE_HEIGHT);
-                    context.fill();
-                                
-                    var leftShadowGradient = context.createLinearGradient(foldX - foldWidth - leftShadowWidth, 0, foldX - foldWidth, 0);
-                    leftShadowGradient.addColorStop(0, 'rgba(0,0,0,0.0)');
-                    leftShadowGradient.addColorStop(1, 'rgba(0,0,0,'+(strength*0.15)+')');
-                    
-                    context.fillStyle = leftShadowGradient;
-                    context.beginPath();
-                    context.moveTo(foldX - foldWidth - leftShadowWidth, 0);
-                    context.lineTo(foldX - foldWidth, 0);
-                    context.lineTo(foldX - foldWidth, PAGE_HEIGHT);
-                    context.lineTo(foldX - foldWidth - leftShadowWidth, PAGE_HEIGHT);
-                    context.fill();
-                    
-                    var foldGradient = context.createLinearGradient(foldX - paperShadowWidth, 0, foldX, 0);
-                    foldGradient.addColorStop(0.35, '#fafafa');
-                    foldGradient.addColorStop(0.73, '#eeeeee');
-                    foldGradient.addColorStop(0.9, '#fafafa');
-                    foldGradient.addColorStop(1.0, '#e2e2e2');
-                    
-                    context.fillStyle = foldGradient;
-                    context.strokeStyle = 'rgba(0,0,0,0.06)';
-                    context.lineWidth = 0.5;
-                    
-                    context.beginPath();
-                    context.moveTo(foldX, 0);
-                    context.lineTo(foldX, PAGE_HEIGHT);
-                    context.quadraticCurveTo(foldX, PAGE_HEIGHT + (verticalOutdent * 2), foldX - foldWidth, PAGE_HEIGHT + verticalOutdent);
-                    context.lineTo(foldX - foldWidth, -verticalOutdent);
-                    context.quadraticCurveTo(foldX, -verticalOutdent * 2, foldX, 0);
-                    
-                    context.fill();
-                    context.stroke();
-                    
-                    
-                    context.restore();
-                }
-                
-            })();
-        </script>
+                })();
+            </script>
+        </section>
     </body>
 </html>
